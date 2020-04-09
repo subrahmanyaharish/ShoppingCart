@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row" style="box-shadow: 2px 2px 7px 2px; margin-top: 30px;">
+    <!-- style="float: left;padding-left: 20px;" -->
+    <mat-form-field class="col-md-4">
+      <mat-label>Enter some input</mat-label>
+      <input matInput placeholder="Ex. Nougat" [(ngModel)]="name">
+    </mat-form-field>
+
+    <!-- style="align-content: centre; justify-content: center;" -->
+    <mat-slider class="col-md-4" style="width: 300px" [disabled]="disabled" [max]="max" [min]="min" [(ngModel)]="value">
+    </mat-slider>
+
+    <!-- style="float: right; padding-right: 20px;" -->
+    <mat-form-field class="col-md-4">
+      <mat-label>Value</mat-label>
+      <input matInput type="number" [(ngModel)]="value">
+    </mat-form-field>
+
+  </div>
+
+  <div  style="padding-top: 20px; text-align: center !important;">
+    <button mat-raised-button color="primary" (click)="addProducts()">Add</button>
+  </div>
+  <mat-divider></mat-divider>
+
+  <div style="padding-top: 20px; text-align: center !important; width: 300px">
+    <mat-list >
+      <div mat-subheader>Products</div>
+      <mat-list-item *ngFor="let psts of products">
+        <mat-icon mat-list-icon>note</mat-icon>
+        <div mat-line> {{psts.product}}</div>
+        <div mat-line> Quantity : {{psts.quantity}} </div>
+        <mat-divider></mat-divider>
+      </mat-list-item>
+    </mat-list>
+  </div>
+
+</div>

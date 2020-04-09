@@ -1,0 +1,15 @@
+{
+  "posts": [
+    { "id": 1, "title": "json-server", "author": "typicode" }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" },
+
+  "login": [{"username":"8330907424","password":"Chimakurthi@123"},
+    {"username":"9908760357","password":"Chimakurthi@123"},
+    {"username":"9550728531","password":"Chimakurthi@123"},
+    {"username":"8008826864","password":"Chimakurthi@123"}]
+
+}

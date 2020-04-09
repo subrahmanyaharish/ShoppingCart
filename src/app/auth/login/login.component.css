@@ -1,0 +1,18 @@
+button:hover{
+  color: white;
+  background-color: darkblue;
+  border-color: darkblue;
+}
+
+
+
+
+.set-centre{
+  align-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  box-shadow: 5px 5px 15px;
+    padding: 40px;
+    opacity: 2;
+    box-shadow: inset 5px 5px 10px 0px
+}

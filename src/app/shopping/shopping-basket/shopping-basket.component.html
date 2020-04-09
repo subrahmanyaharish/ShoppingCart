@@ -1,0 +1,68 @@
+<h2 style="text-align: center;">Logo</h2>
+<div class="container">
+  <div><h2>Items :</h2></div>
+  <mat-accordion>
+    <mat-expansion-panel >
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Vegetables
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <table class="table">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Quantity</th>
+        </tr>
+        <tr *ngFor="let prod of vegetables; let i = index">
+          <td>{{i+1}}</td>
+          <td>{{prod.productName}}</td>
+          <td>{{prod.productQuantity}}</td>
+        </tr>
+      </table>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel >
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Fruits
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <table class="table">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Quantity</th>
+        </tr>
+        <tr *ngFor="let prod of fruits; let i = index">
+          <td>{{i+1}}</td>
+          <td>{{prod.productName}}</td>
+          <td>{{prod.productQuantity}}</td>
+        </tr>
+      </table>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel >
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Over All Total
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <table class="table">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Total Items</th>
+          <th scope="col">Total Quantity</th>
+        </tr>
+        <tr>
+          <td>{{'->'}}</td>
+          <td>{{products.length}}</td>
+          <td>{{''}}</td>
+        </tr>
+      </table>
+    </mat-expansion-panel>
+  </mat-accordion>
+  <div class="checkoutButton"><button mat-raised-button color="primary" >
+    Checkout
+  </button></div>
+  </div>
