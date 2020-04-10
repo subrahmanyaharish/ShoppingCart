@@ -62,7 +62,7 @@ export class CustomerService {
 
   public addProductsSelected(prods: Products[]) {
     this.productsSelected = [...prods];
-    console.log(this.productsSelected);
+    // console.log(this.productsSelected);
   }
 
   public getProductsSelected() {

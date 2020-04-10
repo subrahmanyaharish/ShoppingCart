@@ -20,8 +20,9 @@ export class CustomersComponent implements OnInit {
 
   ngOnInit() {
     this.vegiesService = this.customerService.vegies;
-    // this.searchVegies = this.customerService.vegies;
+    this.vegiesSelected = this.customerService.getProductsSelected();
     this.filterCategories('All');
+    this.count = this.vegiesSelected.length;
   }
 
   addToCart() {
