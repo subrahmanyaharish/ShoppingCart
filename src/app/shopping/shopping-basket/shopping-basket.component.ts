@@ -26,9 +26,9 @@ export class ShoppingBasketComponent implements OnInit {
     this.vegetables = this.products.filter(val => { return val.category === 'Vegetables'; });
   }
 
-  AddVegies(vegies: NgForm) {
-    console.log(vegies);
-  }
+  // AddVegies(vegies: NgForm) {
+  //   console.log(vegies);
+  // }
 
 
 

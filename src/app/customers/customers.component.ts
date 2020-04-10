@@ -21,6 +21,7 @@ export class CustomersComponent implements OnInit {
   ngOnInit() {
     this.vegiesService = this.customerService.vegies;
     // this.searchVegies = this.customerService.vegies;
+    this.filterCategories('All');
   }
 
   addToCart() {
@@ -64,8 +65,8 @@ export class CustomersComponent implements OnInit {
     }
   }
 
-  filterCategories(event) {
-    const category = event.target.value;
+  filterCategories(event: string) {
+    const category = event;
     this.searchVegies = this.customerService.vegies;
     if (category === 'Vegetables') {
       this.vegiesService = this.searchVegies.filter(product => {
